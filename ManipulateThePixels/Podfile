@@ -1,0 +1,3 @@
+ target 'ManipulateThePixels' do
+        pod 'OpenCV'
+ end

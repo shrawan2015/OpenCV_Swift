@@ -11,6 +11,10 @@
 
 
 @interface OpenCVHelper : NSObject
+
 +(NSString *)returnOpenCVVersion ;
 +(UIImage*)makeGrayscale:(UIImage*)rawImage;
++(UIImage *)addSlatToImage:(UIImage *)rawImage;
++(UIImage *)addSlatToImageByPointer:(UIImage *)rawImage ;
+
 @end

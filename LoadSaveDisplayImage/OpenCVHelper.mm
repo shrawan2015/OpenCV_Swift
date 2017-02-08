@@ -28,4 +28,14 @@
 }
 
 
++(UIImage *)createImge:(UIImage *)rawImage {
+    cv::Mat ima(240,320,CV_8U,cv::Scalar(100)); // CV_8U which corresponds to 1-byte pixel images.
+    cv::Mat image2, image3;
+    
+    
+    //  Deep Copy image2.clone(rawImage); // the two images refer to the same data
+    //  Shalow copy rawImage.copyTo(image3); // a new copy is created
+    return MatToUIImage(image3);
+}
+
 @end

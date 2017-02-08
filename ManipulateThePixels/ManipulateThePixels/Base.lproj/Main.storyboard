@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ManipulateThePixels" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hillStation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Rs-cz-1J9">
+                                <rect key="frame" x="0.0" y="92" width="375" height="134"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YdX-ZV-lm0">
+                                <rect key="frame" x="0.0" y="313" width="375" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Rs-cz-1J9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="87a-TK-FdK"/>
+                            <constraint firstItem="YdX-ZV-lm0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ge7-Fw-WOp"/>
+                            <constraint firstItem="YdX-ZV-lm0" firstAttribute="top" secondItem="0Rs-cz-1J9" secondAttribute="bottom" constant="87" id="LsZ-NV-Fxn"/>
+                            <constraint firstItem="0Rs-cz-1J9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="cpu-3G-DD2"/>
+                            <constraint firstItem="YdX-ZV-lm0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="dfr-xH-Pjj"/>
+                            <constraint firstItem="0Rs-cz-1J9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibt-YZ-dyX"/>
+                            <constraint firstItem="0Rs-cz-1J9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kNd-34-oEb"/>
+                            <constraint firstItem="YdX-ZV-lm0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qIF-5K-GFr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="originalImage" destination="0Rs-cz-1J9" id="MAf-AH-ksz"/>
+                        <outlet property="processedImage" destination="YdX-ZV-lm0" id="Mdq-NI-5Nk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hillStation.jpg" width="778" height="387"/>
+    </resources>
+</document>
