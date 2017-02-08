@@ -1,0 +1,3 @@
+ target 'LoadSaveDisplayImage' do 
+	pod 'OpenCV'
+ end
